@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="sweetalert2.min.css">
 <link rel="stylesheet" type="text/css" href="estilo.css">
-<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+<link rel="stylesheet" href="ñ.css" media="screen">
 </head>
 <body id="body">
 <header  id="about">
@@ -38,17 +38,20 @@
       <option value="rgba(235,85,215, 0.9)">Fucsia</option>
       <option value="rgba(37,206,215, 0.9)">Celeste</option>  
     </select>
+    <div id="fff">
+
 	<form action="https://send.pageclip.co/ht7n5uoqXczIiBcwfgpERTDbKGoqdgAp" class="pageclip-form" method="post">
   <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-<p>Pon tu nombre y tu email aqui para dejar registro de tu asistencia en este sitio (Solo hazlo una vez)
-  <input type="text" class="encuesta" name="name" required/>
-  <input type="email" class="encuesta" name="email" required/>
+<p>Pon tu nombre y tu email aqui para dejar registro de tu asistencia en este sitio (Solo hazlo una vez) </p>
+  <input type="text" class="encuesta" name="name" placeholder="Pon tu nombre aqui" required/>
+  <input type="email" class="encuesta" name="email" placeholder="Pon tu email aqui" required/>
 
   <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-  <button class="button pageclip-form__submit" type="submit">
-    <span>Entregar</span>
+  <button class="button pageclip-form__submit" id="subm" type="submit">
+    <p>Entregar</p>
   </button>
 </form>
+</div>
     <main id="main-doc">
     <section id="content" target="_blank" class="HTML">
   <h2 id="HTML">HTML</h2>
@@ -229,7 +232,7 @@ Usa el atributo type para definir a que tipo de recurso externo esta accediendo.
   
           <div class="row">
               <div>
-                  <input id="userInput" type="text" action="mailto:eliel7158@gmail.com" placeholder="Ingresa tu tarea nueva aqui..." maxlength="50">
+                  <input id="userInput" type="text"  placeholder="Ingresa tu tarea nueva aqui..." maxlength="50">
                   <button id="enter"><i class="fas fa-pencil-alt"></i></button>
               </div>
           </div>

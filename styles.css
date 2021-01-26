@@ -33,7 +33,32 @@ code {
   overflow-y:auto;
   font-family: 'Mukta', sans-serif;
 }
-.encuesta
+
+.encuesta{
+  border-radius: 10px;
+	min-width: 60%;
+  padding: 10px;
+  margin: 15px auto;
+}
+#subm{
+  align-items: center;
+  margin: 0 auto 0 auto;
+  display: block;
+  width: 50%;
+  padding: 5px;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  margin: 10;
+  font-family: "Nerko One", cursive;
+  box-sizing: border-box;
+}
+#subm:hover{
+    background: rgba(44, 177, 6, 0.9);
+
+}
 img{
   width:80%;
   margin:5 auto;
