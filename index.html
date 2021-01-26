@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion al Desarrollo Web</title>
+    	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
+
+	<!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="sweetalert2.min.css">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+</head>
+<body id="body">
+<header  id="about">
+ <nav id="navbar" onchange="cambiaFondo(this)">
+    <a class="nav-link" href="#about">Acerca de</a>
+    <a class="nav-link" href="#content">Contenido</a>
+    <a class="nav-link" href="#contact">Contacto</a>
+  </nav>
+</header>
+    <h1>👋 Introduccion al Desarollo Web!</h1>
+<h2>Aqui veras una introduccion al Desarollo de Páginas Web</h2>
+
+    <select name="fondo" id="fondo" onchange="cambiaFondo(this)">
+      <option selected disabled>Elige color del fondo</option>
+       <option value="rgba(0,0,0, 0.9)">Oscuro</option>
+      <option value="rgba(220,220,220,1)">Claro</option>
+      <option value="red">Rojo</option>
+      <option value="green">Verde</option>
+      <option value="rgba(240, 109, 6, 0.9)">Predeterminado</option>
+      <option value="blue">Azul</option>
+      <option value="rgba(198,180,60,1)">Amarillo</option>
+      <option value="rgba(235,85,215, 0.9)">Fucsia</option>
+      <option value="rgba(37,206,215, 0.9)">Celeste</option>  
+    </select>
+	<form action="https://send.pageclip.co/ht7n5uoqXczIiBcwfgpERTDbKGoqdgAp" class="pageclip-form" method="post">
+  <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+<p>Pon tu nombre y tu email aqui para dejar registro de tu asistencia en este sitio (Solo hazlo una vez)
+  <input type="text" class="encuesta" name="name" required/>
+  <input type="email" class="encuesta" name="email" required/>
+
+  <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+  <button class="button pageclip-form__submit" type="submit">
+    <span>Entregar</span>
+  </button>
+</form>
+    <main id="main-doc">
+    <section id="content" target="_blank" class="HTML">
+  <h2 id="HTML">HTML</h2>
+  <p>Bueno, HTML es un lenguaje de marcado para hacer una pagina web, es decir, con este lenguaje tu asignas que es cada cosa en tu pagina web, por ejemplo: con la etiqueta "p" puedes asignar parrafo, problablemente este parrafo que estas leyendo este marcado con una etiqueta "p". Otra cosa a considerar es que la mayoria de las etiquetas se deben abrir y cerrar, pero hay algunas que no necesitan cerrarse. Ejemplo:
+  <pre><code>Se cierra: &lt;p&gt; &lt;/;p&gt;
+  No se cierra: &lt;img&gt;</code></pre> Otra cosa muy importante en HTML, son los atributos, un atributo son palabras especial que determinan el uso o comportamiento del elemento en cuestion. Te dejo los mas importantes (rellenados como ejemplo):
+<!--  Esta parte del codigo esta mal hecha lo se pero los li lo uso al final en "Trabajos para Hacer"  --><br> 
+      <br>
+   - href="facebook.com"<br>
+    -name="Nombre para metadata"<br>
+    -charset="UTF-8"<br>
+    -content="width=device-width, initial-scale=1.0"<br>
+    -src="link de una fotografia"<br>
+    -id="identificacion para un elemento" (CSS) <br>
+    -class="clase de un elemento" (CSS) <br>
+      <br>
+ <p> Aqui te voy a explicar la mayor parte de HTML, asi que leelo con calma, toma apuntes y sigue leyendo. </p>
+
+  <h2 id="doctype">&lt; !DOCTYPE &gt;</h2>
+  <p>Esta etiqueta anuncia que este documento esta escrito en HTML, se coloca al inicio de cualquier código HTML &lt;!DOCTYPE&gt;, a partir de HTML5 la etiqueta &lt;!DOCTYPE&gt; solo tiene que llevar html seguido. Esto es obligatorio. <code>&lt;!DOCTYPE html&gt;</code>Debajo de esta última etiqueta debe ir, obigatoriamente, la etiqueta &lt;html&gt;, como atributo para la etiqueta html se tiene a "lang", que se usa para definir el idioma de la pagina. Nuestro codigo va quedando asi:
+  <pre class="no"><code class="no">&lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+    &lt;/html&gt;
+</code></pre>
+  Dentro de esta etiqueta, debe estar absolutamente todo el contenido de nuestro codigo HTML.
+  </p>
+  <h2 id="head">
+    &lt; head &gt;
+  </h2>
+  <p>Dentro de esta etiqueta viene la informacion no leíble en una pagina web, dentro de esta etiqueta puedes poner varias mas entre las que se encuentran:</p>
+  <h3 id="meta">&lt; meta &gt;</h3>
+  <p>En esta etiqueta debes poner toda la informacion exclusivamente para el navegador (metadata o metadatos). Como por ejemplo:</p>
+  <pre class="no"><code class="no">&lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+      &lt;head&gt;
+      &lt;meta charset=UTF-8&gt;<span class="comentado">//Se cierra automaticamente</span>
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;meta name="descripcion" content="Tutoriales Gratis xd"&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+</code></pre>
+<p>La primer etiqueta meta le dice al navegador el juego de caracteres que usas en este caso UTF-8, el juego de caracteres incluye letras o símbolos especiales que estan fuera del abecedario común.</p>
+<p>La segunda etiqueta meta dice que su nombre es "viewport" y dice que "el ancho usado en esta pagina = el ancho del dispositivo que visite esta pagina, escala inicial: 1.0", por supuesto el ancho lo usaremos en CSS, aun no.</p>
+<p>La tercera etiqueta da una descripcion de la pagina, mayormente usada en busquedas de google</p>
+<img src="https://i.pinimg.com/564x/eb/3a/a6/eb3aa64f7c7410971af06aa53d08477f.jpg" alt="Uso de la etiqueta meta">
+<h3 id="title">&lt; title &gt;</h3>
+<p>Esta etiqueta sirve para darle un nombre a la pagina, este nombre se usa en busquedas de Google y en las pestañas del Navegador</p>
+<pre class="no"><code class="no">&lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+      &lt;head&gt;
+      &lt;meta charset=UTF-8&gt;<span class="comentado">//Se cierra automaticamente</span>
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;meta name="descripcion" content="Tutoriales Gratis xd"&gt;
+      &lt;title&gt;Mi primer titulo&lt;/title&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+</code></pre>
+<img src="https://desarrolladoresweb.org/wp-content/uploads/etiqueta-title-en-la-estructura-basica-html.jpg" alt="Uso de la etiqueta title">
+ <h3 id="link">&lt; link &gt;</h3>
+<p>La etiqueta &lt;link&gt; define la relación entre el documento actual y un recurso externo.
+La etiqueta &lt;link&gt; se usa con mayor frecuencia para vincular a hojas de estilo externas.
+Usa el atributo type para definir a que tipo de recurso externo esta accediendo. Usa el atributo href para poner el link del recurso. Usa el atributo rel para establecer la relacion entre el recurso y la pagina web.</p>
+<pre class="no"><code class="no">&lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+      &lt;head&gt;
+      &lt;meta charset=UTF-8&gt;<span class="comentado">//Se cierra automaticamente</span>
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;meta name="descripcion" content="Tutoriales Gratis xd"&gt;
+      &lt;title&gt;Mi primer titulo&lt;/title&gt;
+      &lt;link rel="shortcut icon" href="imagenes/favicon.png" type="image/png"&gt;
+      &lt;link rel="stylesheet" href="styles.css"&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+</code></pre>
+<p>La primera etiqueta link se usa para establecer un icono en la pagina web, este icono aparece en la pestaña del navegador, como la etiqueta title<./p>
+  <p>La segunda etiqueta link se usa para anclar un documento css a un de HTML</p>
+  <h2 id="body">&lt; body &gt;</h2>
+  <p>La etiqueta "body" contiene toda la informacion que se puede leer en una pagina web. Dentro de esta etiqueta puedes poner imagenes, parrafos, titulos, formularios, etc. Asi que toma nota porque se vienen muchas etiquetas.</p>
+  <h3 id="h1_h6">&lt; h1 hasta h6 &gt;</h3>
+  <p>Esta etiqueta es usada para colocar titulos en tu pagina web, la etiqueta contiene &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;y &lt;h6&gt;, donde "h1" es el titulo principal de la pagina, "h2" vendria ser los subtitulos, "h3" los subtitulos de los subtitulos o los subtitulos de otra seccion de la pagina, etc. Puedes usar cuantas etiquetas quieras, pero usalas sabiamente.</p>
+  <pre class="no"><code class="no">&lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+      &lt;head&gt;
+        &lt;meta charset=UTF-8&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta name="descripcion" content="Tutoriales Gratis xd"&gt;
+        &lt;title&gt;Mi primer titulo&lt;/title&gt;
+        &lt;link rel="shortcut icon" href="imagenes/favicon.png" type="image/png"&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Titulo de mi pagina&lt;/h1&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+  <h3 id="p">&lt; p &gt;</h3>
+  Esta etiqueta indica que lo que contiene es un parrafo. 
+  <pre class="no"><code class="no">&lt;body&gt;
+  &lt;h1&gt;Titulo de mi pagina&lt;/h1&gt;
+  &lt;p&gt;Esto es un párrafo&lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+  <h3 id="img">&lt; img &gt;</h3>
+  <p>Esta etiqueta se usa para poner imagenes en tu pagina web, usa los atributos: src y alt (titulo alternativo en caso de que la imagen no se muestre).</p>
+<pre class="no"><code class="no">&lt;body&gt;
+  &lt;h1&gt;Titulo de mi pagina&lt;/h1&gt;
+  &lt;p&gt;Esto es un párrafo&lt;/p&gt;
+  &lt;img src="https://www.ngenespanol.com/wp-content/uploads/2018/08/Las-5-mejores-playas-desconocidas-en-M%C3%A9xico.jpg" alt="Una hamaca en frente de una playa en México"&gt;
+&lt;/body&gt;
+</code></pre>
+  <h3 id="a">&lt; a &gt;</h3>
+  <p>Esta etiqueta se usa para colocar un hipervinculo a otra pagina, o a un elemento de tu misma página, se usa el atributo href.</p>
+  <pre class="no"><code class="no">&lt;body&gt;
+  &lt;h1 id="titulo"&gt;Titulo de mi pagina&lt;/h1&gt;
+  &lt;p&gt;Esto es un párrafo&lt;/p&gt;
+  &lt;img src="https://www.ngenespanol.com/wp-content/uploads/2018/08/Las-5-mejores-playas-desconocidas-en-M%C3%A9xico.jpg" alt="Una hamaca en frente de una playa en México"&gt;
+  &lt;a href="#titulo"&gt; Titulo &lt;/a&gt;<span class="comentado"> //Lleva al h1 con el id "titulo"</span>
+  &lt;a href="google.com"&gt; Google &lt;/a&gt;<span class="comentado"> //Lleva al sitio google.com</span>
+&lt;/body&gt;
+</code></pre>
+  </section>
+  <p id="rel">Aqui te dejo un ejemplo de <a href="https://codepen.io/Erick-alt/pen/poEVEJL">como se veria tu codigo</a>
+    <br>
+    Tambien puedes<a href="https://www.tutorialesprogramacionya.com/herramientas/vscodeya/" target="_blank">  visitar este sitio </a> si tienes problemas al usar Visual Studio Code
+  </p>
+   </main>
+  
+<template id="FCC">
+  <swal-title>¿Seguro que quieres dejar la página?</swal-title>
+  <swal-html><a href="https://www.freecodecamp.org/fcc80745f18-0854-4b4b-912a-e7b7ec4f0a5c" target="_blank"><button style="padding:10px 25px; background-color: blue; border-radius: 5px; color:white">SI</button></a></swal-html>
+  <swal-icon type="warning" color="red"></swal-icon>
+  <swal-button type="confirm" color="red">
+    Cancelar
+  </swal-button>
+</template>
+  
+  <template id="Git">
+  <swal-title>¿Seguro que quieres dejar la página?</swal-title>
+    <swal-html><a href="https://github.com/elirl" target="_blank"><button style="padding:10px 25px; background-color: blue; border-radius: 5px; color:white">SI</button></a></swal-html>
+  <swal-icon type="warning" color="red"></swal-icon>
+  <swal-button type="confirm" color="red">
+    Cancelar
+  </swal-button>
+</template>
+  
+  
+  <template id="Ema">
+  <swal-title>¿Seguro que quieres dejar la página?</swal-title>
+    <swal-html><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><button style="padding:10px 25px; background-color: blue; border-radius: 5px; color:white"> SI </button></a></swal-html>
+  <swal-icon type="warning" color="red"></swal-icon>
+  <swal-button type="confirm" color="red">
+    Cancelar
+  </swal-button>
+  </swal-button>
+</template>
+  
+  
+  
+
+<div class="con">
+    <div class="container">
+          <div class="row">
+              <div class="intro">
+                  <h1 id="to-dos">Trabajos por hacer</h1>
+                  <div>
+                      <div></div>
+                      <div c
+                  </div>
+              </div>
+          </div>
+  
+          <div class="row">
+              <div class="helpText">
+                  <p id="first">Ingresa tareas a la lista (Los datos ingresados no se almacenan)</p>
+          <p id="second">Cuando hayas acabado, clickea la tarea para marcarla como hecha o borrala si quieres.</p>
+              </div>
+          </div>
+  
+          <div class="row">
+              <div>
+                  <input id="userInput" type="text" action="mailto:eliel7158@gmail.com" placeholder="Ingresa tu tarea nueva aqui..." maxlength="50">
+                  <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+              </div>
+          </div>
+  
+          <!-- Empty List -->
+          <div>
+              <div>
+                  <ul>
+                  </ul>
+              </div>
+          </div>
+  
+      </div>
+      </div>
+<!-- 	<script type="text/javascript" src="script_method3.js"></script> -->
+<section id="contact">
+  <h3 class="ffc">Si quieres ver mis proyectos y trayectoria, o contactarme</h3><div class="social-before">
+  <a class="social" id="profile-link" data-swal-toast-template='#FCC'><i class="fab fa-free-code-camp"></i>FreeCodeCamp</a>
+  <a class="social" data-swal-toast-template='#Git'><i class="fab fa-github-square" target="_blank">Github</i></a>
+  <a class="social" id="email" data-swal-toast-template='#Ema'><i class="fas fa-at"></i>Mandar email</a>
+  </div>
+  <p class="soc">PAGINA PENSADA Y CODIFICADA POR <a href="https://codepen.io/erick-eliel-rojas-navarro" target="_blank">Erick Eliel Rojas Navarro</a></p>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="sweetalert2.min.js"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.13.0/dist/sweetalert2.all.min.js"></script>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+</html>
