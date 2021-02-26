@@ -10,7 +10,7 @@ Swal.mixin({
 
 Swal.fire({
   icon: 'success',
-  title: '¡ BIENVENIDO !',
+  title: 'BIENVENIDO',
   showConfirmButton: false,
   timer: 1000,
   showConfirmButton: false,
@@ -23,6 +23,7 @@ Swal.fire({
 var text = document.getElementById("first");
 var body = document.getElementById("body");
 var nav = document.getElementById("navbar");
+var survey = document.getElementById("fff");
 
 function cambiaFondo(x){
   //cambiar fondo de la pagina
@@ -42,7 +43,14 @@ if(x.value === "rgba(0,0,0, 0.9)"){
  } else {
   text = document.getElementById("first").style.color = "#00bf";
  }
-  
+
+ if(x.value === "rgba(0,0,0, 0.9)"){
+  survey = document.getElementById("fff").style.borderColor = "white";
+} else if(x.value === "blue"){
+ survey = document.getElementById("fff").style.borderColor = ("white"); 
+} else {
+ survey = document.getElementById("fff").style.borderColor = "#00bf";
+}
   //Cambiar fondo del nav
   
   if(x.value === "green"){
