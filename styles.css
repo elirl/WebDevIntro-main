@@ -40,6 +40,9 @@ code {
   padding: 10px;
   margin: 15px auto;
 }
+textarea {
+  max-width:58%;
+}
 #subm{
   align-items: center;
   margin: 0 auto 0 auto;
