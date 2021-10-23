@@ -331,7 +331,9 @@ a[href*="#contact"] {
   .social-after {
     flex-direction: column;
   }
-  
+  #contact {
+    height: 250px;
+  }
 
   img{
     height:28vh;
