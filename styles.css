@@ -317,7 +317,9 @@ input {
 a[href*="#contact"] {
   margin-right:30px;
 }
-
+#fff{
+  width:70%;
+}
   a:hover {
   font-size: 15px;
 }
