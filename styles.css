@@ -7,7 +7,7 @@
    text-shadow: 2px 2px 1px rgba(000, 000, 000, 0.2);
 }
 p{
-  padding: 5px;
+  padding: 15px;
 }
 html{
   scroll-behavior:smooth;
@@ -308,13 +308,17 @@ input {
 a[href*="#contact"] {
   margin-right:30px;
 }
+p{
+  padding: 5px;
+}
   a:hover {
-  font-size: 14px;
+  font-size: 15px;
 }
   .social-before,
   .social-after {
     flex-direction: column;
   }
+  
   #contact {
     height: 265px;
   }
