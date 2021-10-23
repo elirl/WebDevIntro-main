@@ -48,8 +48,10 @@ if(x.value === "rgba(0,0,0, 0.9)"){
   survey = document.getElementById("fff").style.borderColor = "white";
 } else if(x.value === "blue"){
  survey = document.getElementById("fff").style.borderColor = ("white"); 
+} else if(x.value === "rgba(220,220,220,1)"){
+  survey = document.getElementById("fff").style.borderColor = ("black");
 } else {
- survey = document.getElementById("fff").style.borderColor = "#00bf";
+ survey = document.getElementById("fff").style.borderColor = "#1D2154";
 }
   //Cambiar fondo del nav
   
