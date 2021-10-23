@@ -63,9 +63,9 @@ textarea {
 
 }
 img{
-  width:80%;
-  margin:5 auto;
-  height:55vh;
+  width:70%;
+  margin:15 auto;
+  height:60vh;
 }
 #main-doc {
   text-align:justify;
@@ -313,7 +313,7 @@ a[href*="#contact"] {
     height: 265px;
   }
   img{
-    height:30vh;
+    height:28vh;
   }
 }
 @media (max-width:365px){
