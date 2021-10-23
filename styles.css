@@ -45,6 +45,7 @@ code {
 }
 textarea {
   resize:none;
+  width:65%;
 }
 #subm{
   align-items: center;
