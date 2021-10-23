@@ -332,7 +332,7 @@ a[href*="#contact"] {
     flex-direction: column;
   }
   #contact {
-    height: 250px;
+    height: 255px;
   }
 
   img{
