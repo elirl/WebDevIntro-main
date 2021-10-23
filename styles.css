@@ -63,6 +63,9 @@ textarea {
 
 }
 img{
+  justify-content: center;
+  text-align: center;
+  align-content: center;
   width:70%;
   margin:15 auto;
   height:60vh;
