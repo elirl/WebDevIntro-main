@@ -83,7 +83,8 @@ img{
 h2{
   font-family: 'Fredoka One', cursive;
   font-size:35px;
-  margin:10px; 
+  margin:10px;
+  margin-bottom:0px; 
   padding:10px;
   font-size:20px;
   line-height:1.2;
