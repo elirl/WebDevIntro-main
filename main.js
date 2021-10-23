@@ -30,7 +30,7 @@ function cambiaFondo(x){
   var body = document.getElementById("body").style.backgroundColor = x.value;
   
   //cambiar todo el texto
-  if(x.value === "rgba(220,220,220,1)"){
+  if(x.value === "rgba(249,249,249,1)"){
    body = document.getElementById("body").style.color = "black";
   } else {
     body = document.getElementById("body").style.color = "white";
@@ -48,7 +48,7 @@ if(x.value === "rgba(0,0,0, 0.9)"){
   survey = document.getElementById("fff").style.borderColor = "white";
 } else if(x.value === "blue"){
  survey = document.getElementById("fff").style.borderColor = ("white"); 
-} else if(x.value === "rgba(220,220,220,1)"){
+} else if(x.value === "rgba(249,249,249,1)"){
   survey = document.getElementById("fff").style.borderColor = ("black");
 } else {
  survey = document.getElementById("fff").style.borderColor = "#1D2154";
@@ -59,7 +59,7 @@ if(x.value === "rgba(0,0,0, 0.9)"){
    nav = document.getElementById("navbar").style.backgroundColor = "rgb(0,29,3)";
  } else if(x.value === "blue"){
    nav = document.getElementById("navbar").style.backgroundColor = "rgb(0,2,53)";
- } else if(x.value === "rgba(220,220,220,1)"){
+ } else if(x.value === "rgba(249,249,249,1)"){
     nav = document.getElementById("navbar").style.backgroundColor = "white";
  } else if(x.value === "red"){
    nav = document.getElementById("navbar").style.backgroundColor = "rgb(32,0,0)";
